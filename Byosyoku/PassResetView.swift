@@ -1,18 +1,21 @@
-//
-//  PassReset.swift
-//  Byosyoku
-//
-//  Created by 櫻井絵理香 on 2024/04/10.
-//
-
 import SwiftUI
+import FirebaseAuth
 
-struct PassResetView: View {
+struct PasswordResetView: View {
+
+    @State    var email:String = ""
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            TextField("mail address", text: $email).padding().textFieldStyle(.roundedBorder)
+            Button(action: {
+                Auth.auth().sendPasswordReset(withEmail: email) { error in
+                    // ...
+                }
+            }, label: {
+                Text("メール送信")
+            })
+        }
     }
 }
 
-#Preview {
-    PassResetView()
-}

@@ -6,13 +6,30 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
-struct LoginAuthView: View {
+struct AuthenticationView: View {
+
+    @State  var email:String = ""
+    @State  var password:String = ""
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+        NavigationView{
 
-#Preview {
-    LoginAuthView()
+            VStack{
+                TextField("mail address", text: $email).padding().textFieldStyle(.roundedBorder)
+                TextField("password", text: $password).padding().textFieldStyle(.roundedBorder)
+
+                Button(action: {
+
+                }, label: {
+                    Text("ログイン")
+                }).padding()
+
+                NavigationLink(destination: EntryAuthView(), label: {
+                    Text("未登録の方はこちら")
+                })
+            }
+        }
+    }
 }
