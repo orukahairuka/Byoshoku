@@ -110,10 +110,8 @@
 		3B3C30382BC6C09B00514E39 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				3B558AB42BCA919B00C20271 /* Login */,
 				3B558AB12BCA8E9800C20271 /* ProductCellView.swift */,
-				3B3C303D2BC6C0E000514E39 /* PassResetView.swift */,
-				3B3C303B2BC6C0D400514E39 /* LoginAuthView.swift */,
-				3B3C30392BC6C0C900514E39 /* EntryAuthView.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -124,6 +122,16 @@
 				3B558AAF2BCA85D800C20271 /* ProductControll.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		3B558AB42BCA919B00C20271 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3B3C30392BC6C0C900514E39 /* EntryAuthView.swift */,
+				3B3C303D2BC6C0E000514E39 /* PassResetView.swift */,
+				3B3C303B2BC6C0D400514E39 /* LoginAuthView.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
