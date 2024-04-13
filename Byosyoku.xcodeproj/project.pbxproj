@@ -14,6 +14,7 @@
 		3B3C303C2BC6C0D400514E39 /* LoginAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C303B2BC6C0D400514E39 /* LoginAuthView.swift */; };
 		3B3C303E2BC6C0E000514E39 /* PassResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C303D2BC6C0E000514E39 /* PassResetView.swift */; };
 		3B558AB02BCA85D800C20271 /* ProductControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B558AAF2BCA85D800C20271 /* ProductControll.swift */; };
+		3B558AB22BCA8E9800C20271 /* ProductCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B558AB12BCA8E9800C20271 /* ProductCellView.swift */; };
 		3BF1419D2BC7A54100F5AD9E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3BF1419C2BC7A54100F5AD9E /* FirebaseAnalytics */; };
 		3BF1419F2BC7A54100F5AD9E /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 3BF1419E2BC7A54100F5AD9E /* FirebaseAnalyticsOnDeviceConversion */; };
 		3BF141A12BC7A54100F5AD9E /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3BF141A02BC7A54100F5AD9E /* FirebaseAnalyticsSwift */; };
@@ -40,6 +41,7 @@
 		3B3C303B2BC6C0D400514E39 /* LoginAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAuthView.swift; sourceTree = "<group>"; };
 		3B3C303D2BC6C0E000514E39 /* PassResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassResetView.swift; sourceTree = "<group>"; };
 		3B558AAF2BCA85D800C20271 /* ProductControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductControll.swift; sourceTree = "<group>"; };
+		3B558AB12BCA8E9800C20271 /* ProductCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellView.swift; sourceTree = "<group>"; };
 		3BF141B82BC7A75000F5AD9E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,11 +91,8 @@
 			children = (
 				3BF141B82BC7A75000F5AD9E /* GoogleService-Info.plist */,
 				3B3C302A2BC57FEC00514E39 /* ByosyokuApp.swift */,
+				3B558AB32BCA8EB500C20271 /* Controller */,
 				3B3C30382BC6C09B00514E39 /* Screen */,
-				3B3C30392BC6C0C900514E39 /* EntryAuthView.swift */,
-				3B3C303B2BC6C0D400514E39 /* LoginAuthView.swift */,
-				3B3C303D2BC6C0E000514E39 /* PassResetView.swift */,
-				3B558AAF2BCA85D800C20271 /* ProductControll.swift */,
 				3B3C302E2BC57FED00514E39 /* Assets.xcassets */,
 				3B3C30302BC57FED00514E39 /* Preview Content */,
 			);
@@ -111,8 +110,20 @@
 		3B3C30382BC6C09B00514E39 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				3B558AB12BCA8E9800C20271 /* ProductCellView.swift */,
+				3B3C303D2BC6C0E000514E39 /* PassResetView.swift */,
+				3B3C303B2BC6C0D400514E39 /* LoginAuthView.swift */,
+				3B3C30392BC6C0C900514E39 /* EntryAuthView.swift */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		3B558AB32BCA8EB500C20271 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3B558AAF2BCA85D800C20271 /* ProductControll.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +220,7 @@
 				3B3C303E2BC6C0E000514E39 /* PassResetView.swift in Sources */,
 				3B3C303C2BC6C0D400514E39 /* LoginAuthView.swift in Sources */,
 				3B3C302B2BC57FEC00514E39 /* ByosyokuApp.swift in Sources */,
+				3B558AB22BCA8E9800C20271 /* ProductCellView.swift in Sources */,
 				3B558AB02BCA85D800C20271 /* ProductControll.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
