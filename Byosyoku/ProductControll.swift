@@ -53,4 +53,35 @@ class ProductControll: ObservableObject {
             print("Error adding document: \(error)")
         }
     }
+
+    func ProductLister(){
+        db.collection("product").getDocuments { (querySnapshot, error) in
+            if let error = error {
+                print("Error fetching documents: \(error)")
+                return
+            }
+
+            guard let documents = querySnapshot?.documents else {
+                print("No documents found")
+                return
+            }
+
+            for document in documents {
+                let source = document.metadata.hasPendingWrites ? "Local" : "Server"
+
+                //Firestoreから取得したドキュメントをMemoインスタンスに変換し、memosに格納
+                self.products = documents.map { document in
+                    let data = document.data()
+                    return Product(documentId: document.documentID,
+                                   calorie: data["calorie"] as? String ?? "",
+                                   cholesterol: data["cholesterol"] as? String ?? "",
+                                   lipid: data["lipid"] as? String ?? "",
+                                   natrium: data["natrium"] as? String ?? "",
+                                   potassium: data["potassium"] as? String ?? "",
+                                   protein: data["protein"] as? String ?? "",
+                                   createAt: data["createAt"] as? Timestamp ?? Timestamp())
+                }
+            }
+        }
+    }
 }
