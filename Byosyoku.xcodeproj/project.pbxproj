@@ -16,6 +16,7 @@
 		3B558AB02BCA85D800C20271 /* ProductControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B558AAF2BCA85D800C20271 /* ProductControll.swift */; };
 		3B558AB22BCA8E9800C20271 /* ProductCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B558AB12BCA8E9800C20271 /* ProductCellView.swift */; };
 		3B558AB62BCA91E700C20271 /* ProductRegistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B558AB52BCA91E700C20271 /* ProductRegistView.swift */; };
+		3B558AB82BCA93BE00C20271 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B558AB72BCA93BE00C20271 /* GoogleService-Info.plist */; };
 		3BF1419D2BC7A54100F5AD9E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3BF1419C2BC7A54100F5AD9E /* FirebaseAnalytics */; };
 		3BF1419F2BC7A54100F5AD9E /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 3BF1419E2BC7A54100F5AD9E /* FirebaseAnalyticsOnDeviceConversion */; };
 		3BF141A12BC7A54100F5AD9E /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3BF141A02BC7A54100F5AD9E /* FirebaseAnalyticsSwift */; };
@@ -30,7 +31,6 @@
 		3BF141B32BC7A54100F5AD9E /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = 3BF141B22BC7A54100F5AD9E /* FirebaseDynamicLinks */; };
 		3BF141B52BC7A54100F5AD9E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3BF141B42BC7A54100F5AD9E /* FirebaseFirestore */; };
 		3BF141B72BC7A54100F5AD9E /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 3BF141B62BC7A54100F5AD9E /* FirebaseFirestoreCombine-Community */; };
-		3BF141B92BC7A75000F5AD9E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BF141B82BC7A75000F5AD9E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +44,7 @@
 		3B558AAF2BCA85D800C20271 /* ProductControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductControll.swift; sourceTree = "<group>"; };
 		3B558AB12BCA8E9800C20271 /* ProductCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellView.swift; sourceTree = "<group>"; };
 		3B558AB52BCA91E700C20271 /* ProductRegistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRegistView.swift; sourceTree = "<group>"; };
-		3BF141B82BC7A75000F5AD9E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3B558AB72BCA93BE00C20271 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +91,7 @@
 		3B3C30292BC57FEC00514E39 /* Byosyoku */ = {
 			isa = PBXGroup;
 			children = (
-				3BF141B82BC7A75000F5AD9E /* GoogleService-Info.plist */,
+				3B558AB72BCA93BE00C20271 /* GoogleService-Info.plist */,
 				3B3C302A2BC57FEC00514E39 /* ByosyokuApp.swift */,
 				3B558AB32BCA8EB500C20271 /* Controller */,
 				3B3C30382BC6C09B00514E39 /* Screen */,
@@ -215,8 +215,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B3C30322BC57FED00514E39 /* Preview Assets.xcassets in Resources */,
+				3B558AB82BCA93BE00C20271 /* GoogleService-Info.plist in Resources */,
 				3B3C302F2BC57FED00514E39 /* Assets.xcassets in Resources */,
-				3BF141B92BC7A75000F5AD9E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
