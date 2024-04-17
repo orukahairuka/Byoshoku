@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B0B6AF62BCFA9CD00224080 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3B0B6AF52BCFA9CD00224080 /* Alamofire */; };
+		3B0B6AF82BCFD1CE00224080 /* APIElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0B6AF72BCFD1CE00224080 /* APIElement.swift */; };
 		3B36F9772BCB944E00B48CB5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B36F9762BCB944E00B48CB5 /* MainViewController.swift */; };
 		3B36F9792BCB965800B48CB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B36F9782BCB965800B48CB5 /* ContentView.swift */; };
 		3B3C302B2BC57FEC00514E39 /* ByosyokuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C302A2BC57FEC00514E39 /* ByosyokuApp.swift */; };
@@ -38,6 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B0B6AF72BCFD1CE00224080 /* APIElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIElement.swift; sourceTree = "<group>"; };
 		3B36F9762BCB944E00B48CB5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3B36F9782BCB965800B48CB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B3C30272BC57FEC00514E39 /* Byosyoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Byosyoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B0B6AF62BCFA9CD00224080 /* Alamofire in Frameworks */,
 				3BF141AF2BC7A54100F5AD9E /* FirebaseDatabase in Frameworks */,
 				3BF141B52BC7A54100F5AD9E /* FirebaseFirestore in Frameworks */,
 				3BF141A12BC7A54100F5AD9E /* FirebaseAnalyticsSwift in Frameworks */,
@@ -161,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				3B97D3862BCE32B3004C1AA7 /* APIController.swift */,
+				3B0B6AF72BCFD1CE00224080 /* APIElement.swift */,
 			);
 			path = YahooAPI;
 			sourceTree = "<group>";
@@ -196,6 +201,7 @@
 				3BF141B22BC7A54100F5AD9E /* FirebaseDynamicLinks */,
 				3BF141B42BC7A54100F5AD9E /* FirebaseFirestore */,
 				3BF141B62BC7A54100F5AD9E /* FirebaseFirestoreCombine-Community */,
+				3B0B6AF52BCFA9CD00224080 /* Alamofire */,
 			);
 			productName = Byosyoku;
 			productReference = 3B3C30272BC57FEC00514E39 /* Byosyoku.app */;
@@ -227,6 +233,7 @@
 			mainGroup = 3B3C301E2BC57FEC00514E39;
 			packageReferences = (
 				3BF1419B2BC7A54100F5AD9E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				3B0B6AF42BCFA9CD00224080 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 3B3C30282BC57FEC00514E39 /* Products */;
 			projectDirPath = "";
@@ -262,6 +269,7 @@
 				3B3C302B2BC57FEC00514E39 /* ByosyokuApp.swift in Sources */,
 				3B558AB22BCA8E9800C20271 /* ProductCellView.swift in Sources */,
 				3B558ABA2BCAB7D700C20271 /* AudioViewController.swift in Sources */,
+				3B0B6AF82BCFD1CE00224080 /* APIElement.swift in Sources */,
 				3B36F9792BCB965800B48CB5 /* ContentView.swift in Sources */,
 				3B36F9772BCB944E00B48CB5 /* MainViewController.swift in Sources */,
 				3B558AB62BCA91E700C20271 /* ProductRegistView.swift in Sources */,
@@ -477,6 +485,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3B0B6AF42BCFA9CD00224080 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
 		3BF1419B2BC7A54100F5AD9E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -488,6 +504,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3B0B6AF52BCFA9CD00224080 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B0B6AF42BCFA9CD00224080 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		3BF1419C2BC7A54100F5AD9E /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3BF1419B2BC7A54100F5AD9E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
