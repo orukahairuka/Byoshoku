@@ -100,6 +100,7 @@ extension AudioViewController:AVCaptureMetadataOutputObjectsDelegate{
 
             print(metadata.type)
             print("ジャンコードmetadata.stringValue!🐈\(metadata.stringValue!)")
+
         }
     }
 }
