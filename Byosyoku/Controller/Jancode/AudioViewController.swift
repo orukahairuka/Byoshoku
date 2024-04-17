@@ -99,7 +99,8 @@ extension AudioViewController:AVCaptureMetadataOutputObjectsDelegate{
             codeLabel.text = metadata.stringValue!
 
             print(metadata.type)
-            print(metadata.stringValue!)
+            print("ジャンコードmetadata.stringValue!🐈\(metadata.stringValue!)")
+
         }
     }
 }
