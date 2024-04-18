@@ -11,7 +11,7 @@ struct TestView: View {
     var body: some View {
         Button {
             print("apiとってくる")
-            APIController(date: "何渡せばいい？")
+           
         } label: {
             Text("推して")
         }

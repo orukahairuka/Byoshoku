@@ -10,6 +10,7 @@
 		3B0B6AF62BCFA9CD00224080 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3B0B6AF52BCFA9CD00224080 /* Alamofire */; };
 		3B0B6AF82BCFD1CE00224080 /* APIElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0B6AF72BCFD1CE00224080 /* APIElement.swift */; };
 		3B0B6AFD2BCFD5E800224080 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0B6AFC2BCFD5E800224080 /* TestView.swift */; };
+		3B17D36D2BD123DF00348FC2 /* ResearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17D36C2BD123DF00348FC2 /* ResearchController.swift */; };
 		3B36F9772BCB944E00B48CB5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B36F9762BCB944E00B48CB5 /* MainViewController.swift */; };
 		3B36F9792BCB965800B48CB5 /* CameraHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B36F9782BCB965800B48CB5 /* CameraHomeView.swift */; };
 		3B3C302B2BC57FEC00514E39 /* ByosyokuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C302A2BC57FEC00514E39 /* ByosyokuApp.swift */; };
@@ -44,6 +45,7 @@
 		3B0B6AF72BCFD1CE00224080 /* APIElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIElement.swift; sourceTree = "<group>"; };
 		3B0B6AF92BCFD3B100224080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3B0B6AFC2BCFD5E800224080 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		3B17D36C2BD123DF00348FC2 /* ResearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchController.swift; sourceTree = "<group>"; };
 		3B36F9762BCB944E00B48CB5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3B36F9782BCB965800B48CB5 /* CameraHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraHomeView.swift; sourceTree = "<group>"; };
 		3B3C30272BC57FEC00514E39 /* Byosyoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Byosyoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				3B97D3862BCE32B3004C1AA7 /* APIController.swift */,
+				3B17D36C2BD123DF00348FC2 /* ResearchController.swift */,
 				3B0B6AF72BCFD1CE00224080 /* APIElement.swift */,
 			);
 			path = YahooAPI;
@@ -287,6 +290,7 @@
 				3B36F9772BCB944E00B48CB5 /* MainViewController.swift in Sources */,
 				3B558AB62BCA91E700C20271 /* ProductRegistView.swift in Sources */,
 				3B0B6AFD2BCFD5E800224080 /* TestView.swift in Sources */,
+				3B17D36D2BD123DF00348FC2 /* ResearchController.swift in Sources */,
 				3B558AB02BCA85D800C20271 /* ProductControll.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
