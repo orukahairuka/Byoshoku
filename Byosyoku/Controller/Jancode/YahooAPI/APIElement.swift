@@ -20,7 +20,7 @@ struct Welcome: Codable {
 }
 
 // MARK: - Hit
-struct Hit: Codable {
+struct Hit: Codable, Identifiable {
     let index: Int
     let name, description, headLine: String
     let url: String

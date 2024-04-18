@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-func ResearchController(query: String,  completion: @escaping (Result<Welcome, Error>) -> Void){
+func ResearchController(query: String){
 
     AF.request("https://shopping.yahooapis.jp/ShoppingWebService/V3/itemSearch?appid=dj00aiZpPTZhMmg2bUpCUWVIQyZzPWNvbnN1bWVyc2VjcmV0Jng9Mzc-&query=\(query)").response { response in
         do {
@@ -16,11 +16,9 @@ func ResearchController(query: String,  completion: @escaping (Result<Welcome, E
             if let data = response.data {
                 let welcome = try decoder.decode(Welcome.self, from: data)
                 print("welocme: 🤩\(welcome)")
-                completion(.success(welcome))
             }
         } catch {
             print(error.localizedDescription)
-            completion(.failure(error))
         }
     }
 
