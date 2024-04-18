@@ -101,6 +101,21 @@ extension AudioViewController:AVCaptureMetadataOutputObjectsDelegate{
             print(metadata.type)
             print("ジャンコードmetadata.stringValue!🐈\(metadata.stringValue!)")
 
+            if let janCode = metadata.stringValue {
+                avSession.stopRunning()
+                            APIController(janCode: janCode) { result in
+                                switch result {
+                                case .success(let welcome):
+                                    print("welcome: 🤩\(welcome)")
+                                    // APIの結果を使って必要な処理を行う
+                                case .failure(let error):
+                                    print("じゃんコード失敗しましたー！！！！ \(error)")
+                                    // エラーハンドリングを行う
+                                }
+                            }
+                        }
+            print("APIControllerにjanCode渡した")
+
         }
     }
 }
