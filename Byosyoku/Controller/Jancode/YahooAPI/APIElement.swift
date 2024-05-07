@@ -13,8 +13,7 @@ struct Welcome: Codable {
 }
 
 // MARK: - Hit
-struct Hit: Codable, Identifiable {
-    let id = UUID() // Add this line
+struct Hit: Codable {
     let index: Int
     let name, description, headLine: String
     let url: String
@@ -47,6 +46,7 @@ struct Hit: Codable, Identifiable {
         case image, review, affiliateRate, price, premiumPrice, premiumPriceStatus, premiumDiscountRate, premiumDiscountType, priceLabel, point, shipping, genreCategory, parentGenreCategories, brand, parentBrands, janCode, payment, releaseDate, seller, delivery
     }
 }
+
 // MARK: - Brand
 struct Brand: Codable {
     let id: Int?
@@ -81,15 +81,14 @@ struct Point: Codable {
     let premiumAmount, premiumTimes, premiumBonusAmount, premiumBonusTimes: Int
 }
 
-// MARK: - PriceLabel
 struct PriceLabel: Codable {
     let taxable: Bool
     let defaultPrice: Int
     let discountedPrice: JSONNull?
     let fixedPrice: Int?
-    let premiumPrice: JSONNull?
+    let premiumPrice: Int?
     let periodStart: Int?
-    let periodEnd: JSONNull?
+    let periodEnd: Int?
 }
 
 // MARK: - HitReview
@@ -127,7 +126,6 @@ struct Shipping: Codable {
 }
 
 enum Name: String, Codable {
-    case 条件付き送料無料 = "条件付き送料無料"
     case 設定なし = "設定なし"
     case 送料無料 = "送料無料"
 }
