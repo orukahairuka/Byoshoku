@@ -70,7 +70,7 @@ class ProductControll: ObservableObject {
             }
 
             for document in documents {
-                let source = document.metadata.hasPendingWrites ? "Local" : "Server"
+                
 
                 //Firestoreから取得したドキュメントをMemoインスタンスに変換し、memosに格納
                 self.products = documents.map { document in

@@ -1,10 +1,3 @@
-//
-//  Byosyoku
-//
-//  Created by 櫻井絵理香 on 2024/04/16.
-//
-
-
 // This file was generated from JSON Schema using quicktype, do not modify it directly.
 // To parse the JSON, add this file to your project and do:
 //
@@ -20,17 +13,21 @@ struct Welcome: Codable {
 }
 
 // MARK: - Hit
-struct Hit: Codable, Identifiable {
+struct Hit: Codable {
     let index: Int
     let name, description, headLine: String
     let url: String
     let inStock: Bool
-    let code, condition, imageID: String
+    let code: String
+    let condition: Condition
+    let imageID: String
     let image: Image
     let review: HitReview
-    let affiliateRate, price, premiumPrice: Int
+    let affiliateRate: Double
+    let price, premiumPrice: Int
     let premiumPriceStatus: Bool
-    let premiumDiscountRate, premiumDiscountType: JSONNull?
+    let premiumDiscountRate: Int?
+    let premiumDiscountType: String?
     let priceLabel: PriceLabel
     let point: Point
     let shipping: Shipping
@@ -52,13 +49,17 @@ struct Hit: Codable, Identifiable {
 
 // MARK: - Brand
 struct Brand: Codable {
-    let id: Int
+    let id: Int?
     let name: String
+}
+
+enum Condition: String, Codable {
+    case new = "new"
 }
 
 // MARK: - Delivery
 struct Delivery: Codable {
-    let deadLine, day: JSONNull?
+    let deadLine, day: Int?
     let area: String
 }
 
@@ -80,12 +81,14 @@ struct Point: Codable {
     let premiumAmount, premiumTimes, premiumBonusAmount, premiumBonusTimes: Int
 }
 
-// MARK: - PriceLabel
 struct PriceLabel: Codable {
     let taxable: Bool
     let defaultPrice: Int
-    let discountedPrice, fixedPrice, premiumPrice, periodStart: JSONNull?
-    let periodEnd: JSONNull?
+    let discountedPrice: JSONNull?
+    let fixedPrice: Int?
+    let premiumPrice: Int?
+    let periodStart: Int?
+    let periodEnd: Int?
 }
 
 // MARK: - HitReview
@@ -119,7 +122,12 @@ struct SellerReview: Codable {
 // MARK: - Shipping
 struct Shipping: Codable {
     let code: Int
-    let name: String
+    let name: Name
+}
+
+enum Name: String, Codable {
+    case 設定なし = "設定なし"
+    case 送料無料 = "送料無料"
 }
 
 // MARK: - Request
@@ -153,3 +161,4 @@ class JSONNull: Codable, Hashable {
         try container.encodeNil()
     }
 }
+
