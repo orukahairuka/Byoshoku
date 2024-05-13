@@ -7,7 +7,7 @@ struct EntryAuthView: View {
     @State  var name:String = ""
     @State  var email:String = ""
     @State  var password:String = ""
-
+    @State private var isRegisterd = false
     var body: some View {
         ZStack {
             BackgroundShape()
@@ -27,6 +27,7 @@ struct EntryAuthView: View {
                                     user.sendEmailVerification() { error in
                                         if error == nil {
                                             print("仮登録画面へ")
+                                            isRegisterd = true
                                         }
                                     }
                                 }
@@ -38,6 +39,10 @@ struct EntryAuthView: View {
                 }).padding()
             }
         }
+        NavigationLink(destination: ResearchView(),
+                                          isActive: $isRegisterd) {
+                               EmptyView()
+                           }
     }
 }
 
