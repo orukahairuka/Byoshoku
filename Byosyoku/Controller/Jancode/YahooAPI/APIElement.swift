@@ -70,7 +70,7 @@ struct GenreCategory: Codable {
     let depth: Int
 }
 
-// MARK: - Image
+ //MARK: - Image
 struct Image: Codable {
     let small, medium: String
 }
