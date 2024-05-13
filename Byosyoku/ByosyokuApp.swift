@@ -1,17 +1,22 @@
-//
-//  ByosyokuApp.swift
-//  Byosyoku
-//
-//  Created by 櫻井絵理香 on 2024/04/09.
-//
-
 import SwiftUI
+import FirebaseCore
+import FirebaseAppCheck
+
+
+
+
 
 @main
-struct ByosyokuApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+struct YourApp: App {
+  // register app delegate for Firebase setup
+  @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+
+
+  var body: some Scene {
+    WindowGroup {
+      NavigationView {
+          AuthenticationView()
+      }
     }
+  }
 }
